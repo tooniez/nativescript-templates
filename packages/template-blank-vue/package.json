@@ -2,7 +2,7 @@
   "name": "@nativescript/template-blank-vue",
   "main": "app/app.js",
   "displayName": "Blank",
-  "version": "9.0.3",
+  "version": "9.0.4",
   "description": "Blank template for NativeScript apps using Vue.",
   "author": "NativeScript Team <oss@nativescript.org>",
   "license": "Apache-2.0",
@@ -25,6 +25,7 @@
     "!tools/assets",
     ".editorconfig",
     "jsconfig.json",
+    "tailwind.config.js",
     "webpack.config.js"
   ],
   "keywords": [
@@ -42,12 +43,13 @@
   ],
   "dependencies": {
     "@nativescript/core": "~9.0.0",
-    "@nativescript/theme": "^3.1.0",
     "nativescript-vue": "~2.9.3"
   },
   "devDependencies": {
+    "@nativescript/tailwind": "^2.1.0",
     "@nativescript/webpack": "~5.0.31",
     "nativescript-vue-template-compiler": "~2.9.3",
+    "tailwindcss": "~3.4.0",
     "vue": "~2.6.12",
     "vue-loader": "^15.11.1",
     "vue-template-compiler": "~2.6.12"
