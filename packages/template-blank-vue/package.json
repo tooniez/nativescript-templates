@@ -2,7 +2,7 @@
   "name": "@nativescript/template-blank-vue",
   "main": "app/app.js",
   "displayName": "Blank",
-  "version": "9.0.1",
+  "version": "9.0.2",
   "description": "Blank template for NativeScript apps using Vue.",
   "author": "NativeScript Team <oss@nativescript.org>",
   "license": "Apache-2.0",
@@ -24,7 +24,8 @@
     "tools",
     "!tools/assets",
     ".editorconfig",
-    "jsconfig.json"
+    "jsconfig.json",
+    "webpack.config.js"
   ],
   "keywords": [
     "nstudio",
@@ -45,7 +46,10 @@
     "nativescript-vue": "~2.9.3"
   },
   "devDependencies": {
-    "@nativescript/webpack": "5.0.24",
-    "nativescript-vue-template-compiler": "~2.9.3"
+    "@nativescript/webpack": "~5.0.31",
+    "nativescript-vue-template-compiler": "~2.9.3",
+    "vue": "~2.6.12",
+    "vue-loader": "^15.11.1",
+    "vue-template-compiler": "^2.7.16"
   }
 }
