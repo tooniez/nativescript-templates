@@ -3,7 +3,7 @@
   "main": "app/app.js",
   "displayName": "Navigation Drawer",
   "templateType": "App template",
-  "version": "9.0.2",
+  "version": "9.0.3",
   "description": "Side navigation template using Vue.",
   "author": "NativeScript Team <oss@nativescript.org>",
   "license": "Apache-2.0",
@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@nativescript/core": "~9.0.0",
-    "@nativescript-community/ui-drawer": "^1.0.0",
+    "@nativescript-community/ui-drawer": "^0.1.31",
     "nativescript-vue": "^3.0.0"
   },
   "devDependencies": {
