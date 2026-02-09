@@ -68,6 +68,7 @@
       onNavigationItemTap(component: any, pageName: string) {
         this.selectedPage = pageName
         $navigateTo(component, {
+          frame: 'main',
           clearHistory: true
         })
         utils.closeDrawer()

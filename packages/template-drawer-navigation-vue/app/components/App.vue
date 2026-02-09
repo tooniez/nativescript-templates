@@ -3,7 +3,7 @@
         <StackLayout ~leftDrawer backgroundColor="#ffffff">
             <DrawerContent />
         </StackLayout>
-        <Frame ~mainContent>
+        <Frame ~mainContent id="main">
             <Home />
         </Frame>
     </Drawer>
