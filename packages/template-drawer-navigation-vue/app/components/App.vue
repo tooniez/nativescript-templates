@@ -9,14 +9,15 @@
     </Drawer>
 </template>
 
-<script>
+<script lang="ts">
+  import { defineComponent } from 'nativescript-vue'
   import DrawerContent from './DrawerContent.vue'
   import Home from './Home.vue'
 
-  export default {
+  export default defineComponent({
     components: {
       DrawerContent,
       Home
     }
-  }
+  })
 </script>

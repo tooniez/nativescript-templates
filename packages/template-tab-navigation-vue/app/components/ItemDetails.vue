@@ -11,8 +11,10 @@
     </Page>
 </template>
 
-<script>
-  export default {
+<script lang="ts">
+  import { defineComponent } from 'nativescript-vue'
+
+  export default defineComponent({
     props: ['item']
-  }
+  })
 </script>

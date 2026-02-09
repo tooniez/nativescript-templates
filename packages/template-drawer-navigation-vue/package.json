@@ -1,9 +1,9 @@
 {
   "name": "@nativescript/template-drawer-navigation-vue",
-  "main": "app/app.js",
+  "main": "app/app.ts",
   "displayName": "Navigation Drawer",
   "templateType": "App template",
-  "version": "9.0.3",
+  "version": "9.0.4",
   "description": "Side navigation template using Vue.",
   "author": "NativeScript Team <oss@nativescript.org>",
   "license": "Apache-2.0",
@@ -17,7 +17,8 @@
     "tools",
     "!tools/assets",
     ".editorconfig",
-    "jsconfig.json"
+    "types",
+    "tsconfig.json"
   ],
   "keywords": [
     "nstudio",
@@ -47,7 +48,10 @@
   },
   "devDependencies": {
     "@nativescript/tailwind": "^4.0.0",
+    "@nativescript/types": "~9.0.0",
     "@nativescript/webpack": "~5.0.31",
-    "tailwindcss": "^4.0.0"
+    "@types/node": "^20.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "~5.8.0"
   }
 }

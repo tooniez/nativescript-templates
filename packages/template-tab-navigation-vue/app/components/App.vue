@@ -20,16 +20,17 @@
     </TabView>
 </template>
 
-<script>
+<script lang="ts">
+  import { defineComponent } from 'nativescript-vue'
   import Items from './Items.vue'
   import Browse from './Browse.vue'
   import Search from './Search.vue'
 
-  export default {
+  export default defineComponent({
     components: {
       Items,
       Browse,
       Search
     }
-  }
+  })
 </script>

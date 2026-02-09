@@ -14,14 +14,15 @@
     </Page>
 </template>
 
-<script>
+<script lang="ts">
+  import { defineComponent } from 'nativescript-vue'
   import * as utils from '~/shared/utils'
 
-  export default {
+  export default defineComponent({
     methods: {
       onDrawerButtonTap() {
         utils.showDrawer()
       }
     }
-  }
+  })
 </script>

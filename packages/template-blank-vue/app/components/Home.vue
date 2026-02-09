@@ -10,12 +10,14 @@
     </Page>
 </template>
 
-<script>
-  export default {
+<script lang="ts">
+  import { defineComponent } from 'nativescript-vue'
+
+  export default defineComponent({
     computed: {
       message() {
         return "Blank {N}-Vue app";
       }
     }
-  };
+  });
 </script>

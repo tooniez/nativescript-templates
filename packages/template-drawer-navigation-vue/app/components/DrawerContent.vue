@@ -49,8 +49,8 @@
     </GridLayout>
 </template>
 
-<script>
-  import { $navigateTo } from 'nativescript-vue'
+<script lang="ts">
+  import { defineComponent, $navigateTo } from 'nativescript-vue'
   import * as utils from '~/shared/utils'
   import Home from './Home.vue'
   import Browse from './Browse.vue'
@@ -58,14 +58,14 @@
   import Search from './Search.vue'
   import Settings from './Settings.vue'
 
-  export default {
+  export default defineComponent({
     data() {
       return {
         selectedPage: 'Home'
       }
     },
     methods: {
-      onNavigationItemTap(component, pageName) {
+      onNavigationItemTap(component: any, pageName: string) {
         this.selectedPage = pageName
         $navigateTo(component, {
           clearHistory: true
@@ -73,5 +73,5 @@
         utils.closeDrawer()
       }
     }
-  }
+  })
 </script>

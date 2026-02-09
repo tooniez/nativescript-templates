@@ -14,11 +14,11 @@
     </Page>
 </template>
 
-<script>
-  import { $navigateTo } from 'nativescript-vue'
+<script lang="ts">
+  import { defineComponent, $navigateTo } from 'nativescript-vue'
   import ItemDetails from './ItemDetails.vue'
 
-  export default {
+  export default defineComponent({
     data() {
       return {
         items: [
@@ -42,7 +42,7 @@
       }
     },
     methods: {
-      onItemTap(args) {
+      onItemTap(args: any) {
         $navigateTo(ItemDetails, {
           frame: 'items',
           props: { item: args.item },
@@ -55,5 +55,5 @@
         })
       }
     }
-  }
+  })
 </script>

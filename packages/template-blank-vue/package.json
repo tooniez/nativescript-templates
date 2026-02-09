@@ -1,8 +1,8 @@
 {
   "name": "@nativescript/template-blank-vue",
-  "main": "app/app.js",
+  "main": "app/app.ts",
   "displayName": "Blank",
-  "version": "9.0.6",
+  "version": "9.0.7",
   "description": "Blank template for NativeScript apps using Vue.",
   "author": "NativeScript Team <oss@nativescript.org>",
   "license": "Apache-2.0",
@@ -23,8 +23,9 @@
     "hooks",
     "tools",
     "!tools/assets",
+    "types",
     ".editorconfig",
-    "jsconfig.json"
+    "tsconfig.json"
   ],
   "keywords": [
     "nstudio",
@@ -45,7 +46,10 @@
   },
   "devDependencies": {
     "@nativescript/tailwind": "^4.0.0",
+    "@nativescript/types": "~9.0.0",
     "@nativescript/webpack": "~5.0.31",
-    "tailwindcss": "^4.0.0"
+    "@types/node": "^20.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "~5.8.0"
   }
 }
